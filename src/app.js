@@ -1,2 +1,13 @@
-import 'font-awesome/scss/font-awesome.scss';
-import './app.scss';
+import React from 'react';
+import ReactDom from 'react-dom';
+import Button from 'material-ui/Button';
+
+function App() {
+  return (
+    <Button raised color="primary">
+      Hello World
+    </Button>
+  );
+}
+
+ReactDom.render(<App />, document.querySelector('#root'));
