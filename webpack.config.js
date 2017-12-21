@@ -18,8 +18,7 @@ const cssConfig = isProd ? cssProd : cssDev;
 module.exports = {
   entry: {
     fontAwesome: 'font-awesome/scss/font-awesome.scss',
-    app: './src/app.js',
-    about: './src/about.js'
+    app: './src/app.js'
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -78,13 +77,6 @@ module.exports = {
       hash: true,
       excludeChunks: ['about'],
       template: './src/index.html'
-    }),
-    new HtmlWebpackPlugin({
-      title: 'About',
-      chunks: ['about'],
-      hash: true,
-      filename: 'about.html',
-      template: './src/about.html'
     }),
     new ExtractTextPlugin({
       filename: '/css/[name].css',
