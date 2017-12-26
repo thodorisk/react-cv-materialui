@@ -1,1 +1,118 @@
-
+body {
+  margin: 0;
+  font-size: 16px;
+  .contentWrapper {
+    height: 500px;
+    width: 100%;
+    .innerWrapper {
+      padding: 15% 10% 15% 10%;
+      h1.greeting {
+        font-size: 5em;
+        color: #4A148C;
+        text-shadow: 4px 4px #64FFDA;
+        letter-spacing: -8px;
+      }
+      h1 {
+        font: bold 2em Roboto, Times, serif;
+        color: #FFFFFF;
+        text-align: center;
+        -webkit-margin-before: 0;
+        -webkit-margin-after: 0;
+      }
+    }
+  }
+  .aboutWrapper {
+    height: 500px;
+    width: 100%;
+    background-color: #FFFFFF;
+    color: #4A148C;
+    .innerWrapper {
+      padding: 5% 10% 10% 10%;
+      h1 {
+        font: bold 2em Roboto, Times, serif;
+        color: #D7CCC8;
+        text-align: center;
+        -webkit-margin-before: 0;
+        -webkit-margin-after: 0;
+      }
+      p {
+        font: 0.925em Roboto, Times, serif;
+        text-align: justify;
+        padding: 0 200px;
+      }
+    }
+  }
+  .eduexpWrapper {
+    height: 1000px;
+    width: 100%;
+    background-color: #EFEBE9;
+    color: #D7CCC8;
+    .innerWrapper {
+      padding: 5% 10% 10% 10%;
+      img {
+        width: 30%;
+        height: 30%;
+        float: left;
+        padding: 60px;
+      }
+      h1 {
+        font: bold 2em Roboto, Times, serif;
+        color: #4A148C;
+        text-align: center;
+        -webkit-margin-before: 0;
+        -webkit-margin-after: 0;
+      }
+      h4 {
+        font: bold 1em Roboto, Times, serif;
+        color: #D7CCC8;
+        text-align: left;
+        padding-top: 15px;
+        -webkit-margin-before: 0;
+        -webkit-margin-after: 0;
+      }
+      li {
+        font: 0.825em Roboto, Times, serif;
+        text-align: justify;
+        padding: 0 100px;
+        list-style-type: none;
+      }
+      p {
+        font: 0.825em Roboto, Times, serif;
+        text-align: justify;
+        padding: 0 100px;
+      }
+    }
+  }
+  .skillsWrapper {
+    height: 500px;
+    width: 100%;
+    background-color: #4A148C;
+    color: #D7CCC8;
+    .innerWrapper {
+      padding: 5% 10% 10% 10%;
+      .progress-bars {
+        margin-left: 20%;
+      }
+      h1 {
+        font: bold 2em Roboto, Times, serif;
+        color: #FFFFFF;
+        text-align: center;
+        -webkit-margin-before: 0;
+        -webkit-margin-after: 0;
+      }
+      h4 {
+        font: 0.925em Roboto, Times, serif;
+        color: #D7CCC8;
+        text-align: left;
+        padding-top: 15px;
+        -webkit-margin-before: 0;
+        -webkit-margin-after: 0;
+      }
+      p {
+        font: 0.925em Roboto, Times, serif;
+        text-align: justify;
+        padding: 0 200px;
+      }
+    }
+  }
+}

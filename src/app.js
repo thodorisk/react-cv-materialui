@@ -1,13 +1,34 @@
 import React from 'react';
-import ReactDom from 'react-dom';
-import Button from 'material-ui/Button';
+import ReactDOM from 'react-dom';
+import './favicon.ico';
+import './app.scss';
+import HeaderNavigation from './header';
+import Introduction from './intro';
+import About from './personal';
+import Skills from './skills';
+import Education from './education';
 
-function App() {
-  return (
-    <Button raised color="primary">
-      Hello World
-    </Button>
-  );
-}
+ReactDOM.render(
+  <HeaderNavigation />,
+  document.getElementById('root')
+);
 
-ReactDom.render(<App />, document.querySelector('#root'));
+ReactDOM.render(
+  <Introduction />,
+  document.getElementById('intro')
+);
+
+ReactDOM.render(
+  <About />,
+  document.getElementById('about')
+);
+
+ReactDOM.render(
+  <Education />,
+  document.getElementById('education')
+);
+
+ReactDOM.render(
+  <Skills />,
+  document.getElementById('skills')
+);

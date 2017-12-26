@@ -18,7 +18,7 @@
     "webpack",
     "sass",
     "react",
-    "materialUI",
+    "material-ui",
     "babel",
     "es6"
   ],
@@ -30,12 +30,12 @@
   "homepage": "https://github.com/thodorisk/react-cv-materialui#readme",
   "dependencies": {
     "jquery": "^3.2.1",
-    "lodash": "^4.17.4",
-    "material-ui": "^1.0.0-beta.24",
+    "material-ui": "^0.20.0",
     "material-ui-icons": "^1.0.0-beta.17",
     "prop-types": "^15.6.0",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-router": "^4.2.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.2.2",

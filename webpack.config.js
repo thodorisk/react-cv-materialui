@@ -17,8 +17,13 @@ const cssConfig = isProd ? cssProd : cssDev;
 
 module.exports = {
   entry: {
-    fontAwesome: 'font-awesome/scss/font-awesome.scss',
-    app: './src/app.js'
+    app: './src/app.js',
+    header: './src/header.js',
+    intro: './src/intro.js',
+    personal: './src/personal.js',
+    experience: './src/experience.js',
+    education: './src/education.js',
+    skills: './src/skills.js'
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -49,6 +54,13 @@ module.exports = {
         ]
       },
       {
+        test: /\.ico$/i,
+        use: [
+          'file-loader?name=[name].[ext]',
+          'image-webpack-loader'
+        ]
+      },
+      {
         test: /\.woff2?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         use: 'url-loader?limit=10000&name=fonts/[name].[ext]'
       },
@@ -60,13 +72,14 @@ module.exports = {
   },
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
+    port: 9000,
     compress: true,
     hot: true,
     stats: 'errors-only'
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Homepage',
+      title: 'Thodoris Karagiannis | Front-End Enginner',
       hash: true,
       excludeChunks: ['about'],
       template: './src/index.html'
