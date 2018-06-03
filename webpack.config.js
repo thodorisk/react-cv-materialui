@@ -4,7 +4,6 @@ const path = require('path');
 const webpack = require('webpack');
 const autoprefixer = require('autoprefixer');
 const glob = require('glob');
-const PurifyCSSPlugin = require('purifycss-webpack');
 
 // CSS configuration
 const cssProd = ExtractTextPlugin.extract({
@@ -85,7 +84,7 @@ module.exports = {
       template: './src/index.html'
     }),
     new ExtractTextPlugin({
-      filename: '/css/[name].css',
+      filename: './css/[name].css',
       disable: process.env.NODE_ENV === 'development',
       allChunks: true
     }),
@@ -93,10 +92,6 @@ module.exports = {
     new webpack.NamedModulesPlugin(),
     new webpack.LoaderOptionsPlugin({
       postcss: [autoprefixer]
-    }),
-    new PurifyCSSPlugin({
-      paths: glob.sync(path.join(__dirname, 'src/*.html')),
-      purifyOptions: { minify: true }
     })
   ]
 };
